@@ -1,0 +1,11 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/nav.ejs') %>
+
+<h1>Make a post on your Blog!</h1>
+<form action="/newpost" method="post">
+    <input type="text" name="title" placeholder="Title" required>
+    <textarea name="content" placeholder="Content" required></textarea>
+    <!-- <input type="image" name="image" placeholder="upload image" accept="image/*"> -->
+    <input type="submit" value="Create Post">
+</form>
+<%- include('partials/footer.ejs') %>

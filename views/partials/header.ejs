@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+</head>
+<body>
+    <%if(locals.name){ %>
+        <h1>
+        <%= name %>'s Blog Page
+        </h1>
+    <%}else{ %>
+        <h1>
+        Blogg Blogger
+        </h1>
+    <%} %>
+</body>
+</html>

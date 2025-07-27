@@ -1,0 +1,214 @@
+/* Reset & base */
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px; 
+
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+    color: #ff6f61;
+    margin-top: 20px;
+}
+
+/* Navigation Bar */
+.sidenav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffe0ec;
+    padding: 15px;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #ff4081;
+    background-color: #fff0f5;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sidenav a:hover {
+    background-color: #ffb6c1;
+    transform: scale(1.05);
+}
+
+/* Forms */
+form {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 1em;
+    background: #fffafc;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"], button[type="submit"] {
+    padding: 10px;
+    background-color: #ff69b4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+/* Post List */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+li {
+    background: #fff0f5;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #e91e63;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Delete Button inside list item */
+li form {
+    display: inline;
+    margin-left: 10px;
+}
+
+li button {
+    background-color: #ff1744;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+li button:hover {
+    background-color: #d50000;
+}
+.about-box {
+    background: white;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.post-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+    text-align: center;
+}
+
+.post-wrapper h1 {
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.post-wrapper p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Remove white background/borders from inline delete form */
+/* Remove white background/borders from inline delete form */
+.delete-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+footer {
+    background-color: #ffe0ec;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff1493;
+}
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffe0ec;
+    color: #e91e63;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 2px solid #ffb6c1;
+    z-index: 1000;
+}
+

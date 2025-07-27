@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/nav.ejs') %>
+
+<h1>Home Page</h1>
+<h2>Posts so far...</h2>
+<ul>
+  <% posts.forEach((post, index) => { %>
+    <li>
+      <a href="/post/<%= index %>"><%= post.title %></a> by <%= post.author %>
+
+      <!-- Delete button -->
+      <form action="/delete/<%= index %>" method="POST" class="delete-form">
+        <button type="submit">
+          Delete
+        </button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+<%- include('partials/footer.ejs') %>
